@@ -12,7 +12,7 @@ type
     paste_id: string
 
 proc shorten(url: string) =
-  if isEmptyOrWhitespace(url):
+  if url.isEmptyOrWhitespace:
     quit("fatal: You must specify a url to shorten.", 1)
   
   if url.match(urlRe).isNone:
