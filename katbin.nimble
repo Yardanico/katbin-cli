@@ -5,9 +5,9 @@ author        = "SphericalKat"
 description   = "CLI for katb.in"
 license       = "MIT"
 srcDir        = "src"
-bin           = @["katbin_cli"]
+bin           = @["katbin"]
 
 
 # Dependencies
 
-requires "nim >= 1.4.2"
+requires "nim >= 1.4.2", "cligen"
